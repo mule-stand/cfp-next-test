@@ -19,3 +19,5 @@ out/
 # dev
 .vscode/
 .idea/
+
+/test
