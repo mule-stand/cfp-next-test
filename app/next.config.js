@@ -4,7 +4,7 @@
 const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
-  transpilePackages: ['@sellpass/*'],
+  swcMinify: true,
   experimental: {
     appDir: true,
     typedRoutes: true,
