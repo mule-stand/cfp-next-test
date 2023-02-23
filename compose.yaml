@@ -1,0 +1,24 @@
+services:
+  node-cli:
+    build: docker/node/
+    working_dir: /app/
+    volumes:
+      - ./app/:/app/
+
+  dev:
+    build: docker/node/
+    working_dir: /app/
+    volumes:
+      - ./app/:/app/
+    ports:
+      - '8080:80'
+    command: pnpm run dev
+
+  prod:
+    build: docker/node/
+    working_dir: /app/
+    volumes:
+      - ./app/:/app/
+    ports:
+      - '3000:80'
+    command: pnpm run start
