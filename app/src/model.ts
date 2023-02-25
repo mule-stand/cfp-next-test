@@ -106,7 +106,6 @@ export type ShopData = {
 }
 
 export const getShopData = async () => {
-  console.log('aa')
   // const data = await fetch(
   //   'https://dev.sellpass.io/v3/internal/public/shops/hyperflick.sellpass.io/main',
   //   { cache: 'no-store' }
